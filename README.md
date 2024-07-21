@@ -1,3 +1,21 @@
+## 🏡 Luxury Properties: Real Estate Website
+
+Welcome to **Luxury Properties**, a cutting-edge real estate platform where users can **buy** and **rent** luxury homes! 🏠✨
+
+### 🌟 Features:
+- **Search Functionality**: Easily find properties based on city, minimum and maximum price, and apply filters. 🔍
+- **Sorting Options**: Sort properties by price from **low to high** or **high to low**. 📊
+- **Modern UI**: Built with **Next.js** for optimal performance and learning. 💻
+- **Stylish Design**: Utilizes **Tailwind CSS** for sleek and responsive styling. 🎨
+
+### 🛠️ Tech Stack:
+- **Next.js**: A powerful React framework for server-side rendering and static site generation.
+- **Tailwind CSS**: A utility-first CSS framework for designing custom UI with ease.
+
+### 🎓 Learning Objectives:
+- Master **Next.js** for building high-performance web applications.
+- Gain hands-on experience with **Tailwind CSS** to create beautiful, responsive layouts.
+- 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
