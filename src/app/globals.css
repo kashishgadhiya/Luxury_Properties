@@ -52,8 +52,8 @@ body {
 
 .slider-container .slick-prev,
 .slider-container .slick-next {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: rgba(128, 128, 128, 0.5); 
   border-radius: 50%; 
   color: white; 
@@ -71,6 +71,7 @@ body {
 
 .slider-container .slick-prev {
   left: 12px;
+  
 }
 
 .slider-container .slick-next {
