@@ -17,7 +17,7 @@ const Firstpart = () => {
   restaurant, } = Singlepagedata[0];
 
   return (
-    <div className='bg-slate-100 w-1/2 p-5 rounded-lg'>
+    <div className='bg-slate-100 lg:w-1/2 p-5 rounded-lg w-full'>
      
     
       <p className='font-semibold my-4 text-xl'>General</p>
@@ -46,9 +46,9 @@ const Firstpart = () => {
       </div>
   
       <p className='font-semibold mt-5 text-md'>Room Sizes</p>
-      <div className='bg-white rounded-xl px-3 my-2 py-2'>
+      <div className='bg-white rounded-xl px-3 my-2 py-2 '>
 
-      <div className='flex items-center justify-between font-medium my-2 '>
+      <div className='flex items-center justify-between font-medium my-2  flex-col-reverse gap-5 lg:flex-row lg:gap-0'>
         <div  className='flex items-center'>
           <FaVectorSquare className='mx-1' /> {size}
         </div>
@@ -63,10 +63,10 @@ const Firstpart = () => {
 
     
       <p className='font-semibold mt-5'>Nearby Places</p>
-      <div className='bg-white rounded-xl px-3   my-2 py-2'> 
+      <div className='bg-white rounded-xl px-3   my-2 py-2 flex-wrap'> 
 
 
-      <div className='flex items-center justify-between font-medium mt-1'>
+      <div className='flex items-center justify-between font-medium mt-1 lg:flex-row flex-col gap-5 lg:gap-0'>
         <div  className='flex items-start gap-2 '>
         <BiSolidSchool className='mt-1' /> 
         <div className='flex  flex-col '>

@@ -24,7 +24,7 @@ const Secpart = () => {
     setIsModalOpen(true);
   };
 
-  // Function to close the modal
+
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedImage('');
@@ -32,7 +32,7 @@ const Secpart = () => {
 
 
   return (
-    <div className='w-1/2 ml-6'>
+    <div className='lg:w-1/2 ml-6 w-full'>
       <div className='flex flex-col'>
         
         <div className='flex-shrink-0 w-[90%]'>
@@ -46,7 +46,7 @@ const Secpart = () => {
           />
         </div>
 
-        {/* Small Images in a Column */}
+     
         <div className='flex justify-between   w-[90%]'>
           {otherImages.slice(0, 3).map((image, index) => (
             <div key={index} className='flex mb-2 my-2'>
@@ -67,8 +67,8 @@ const Secpart = () => {
 <div className='flex gap-32 items-center'>
 <div >
          
-      <div className='flex items-center gap-2 my-2'>
-        <CiLocationOn />
+      <div className='flex items-center gap-2 my-2  '>
+        <CiLocationOn  className='w-5'/>
         <div>{address}</div>
       </div>
 
@@ -77,7 +77,7 @@ const Secpart = () => {
       </div>
 </div>
 
-      <div>
+      <div className=' lg:inline hidden'>
         <Image
           src={ownerPhoto}
           width={80}
@@ -90,7 +90,7 @@ const Secpart = () => {
 </div>
       <p className='mb-7 mt-2'>{description}</p>
 
-      {/* Modal for full-screen image */}
+     
       {isModalOpen && (
         <div className='fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50'>
           <div className='relative'>
