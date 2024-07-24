@@ -1,31 +1,3 @@
-// import React from 'react';
-
-// import data from '../lib/Data';
-// import Filter from '../Components/Filter';
-// import Card from '../Components/Card';
-
-
-
-
-// const Listpage = () => {
-//   return (
-//     <>
-//     <Filter/>
-//     <div className='flex max-w-8xl mx-auto p-2 h-screen gap-5 ml-6'>
-        
-//       <div className='flex flex-wrap gap-10  w-screen'>
-//         {data.map(item => (
-//           <Card key={item.id} item={item}/>
-//           ))}
-        
-//       </div>
-     
-//     </div>
-//           </>
-//   );
-// };
-
-// export default Listpage;
 
 "use client"
 import React, { useState } from 'react';

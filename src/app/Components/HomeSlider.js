@@ -60,7 +60,7 @@ const HomeSlider = () => {
         slidesToSlide={1}
         swipeable
       >
-        {/* Your carousel items */}
+     
       </Carousel>
     </div>
   )

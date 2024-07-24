@@ -1,11 +1,16 @@
+
+
 "use client"
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import data from "../lib/RentData";
 import Card from "./Card";
-
+import CardLoading from "./CardLoading";
 
 function Focus() {
+  const [cardLoading, setCardLoading] = useState(true);
+  const [limitedData, setLimitedData] = useState([]);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -13,54 +18,67 @@ function Focus() {
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [
-        {
-          breakpoint: 1024, 
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: false,
-            centerMode: true, 
-            centerPadding: '0', 
-          },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false,
+          centerMode: true,
+          centerPadding: "0",
         },
-        {
-          breakpoint: 768, 
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-            centerMode: true, 
-            centerPadding: '20px', 
-          },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          centerMode: true,
+          centerPadding: "20px",
         },
-        {
-          breakpoint: 480, 
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-            centerMode: true, 
-            centerPadding: '20px', 
-          },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          centerMode: true,
+          centerPadding: "20px",
         },
-      ],
+      },
+    ],
   };
 
-  
-  const limitedData = data.slice(11,20);
+  useEffect(() => {
+    setTimeout(() => {
+      const limitedDataFromApi = data.slice(11, 20);
+      setLimitedData(limitedDataFromApi);
+      setCardLoading(false);
+    }, 1000);
+  }, []);
 
   return (
     <>
-      <h1 className='text-xl font-medium mt-16'>Projects in Focus</h1>
+      <h1 className="text-xl font-medium mt-16">Projects in Focus</h1>
       <div className="slider-container">
-        <Slider {...settings}>
-          {limitedData.map((item) => (
-            <Card key={item.id} item={item} />
-          ))}
-        </Slider>
+        {cardLoading ? (
+          <Slider {...settings}>
+            <CardLoading />
+            <CardLoading />
+            <CardLoading />
+          </Slider>
+        ) : (
+          <Slider {...settings}>
+            {limitedData.map((item) => (
+              <Card key={item.id} item={item} />
+            ))}
+          </Slider>
+        )}
       </div>
     </>
   );

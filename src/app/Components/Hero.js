@@ -18,11 +18,11 @@ const Hero = () => {
       <section className='mx-auto my-16 px-4'>
         <div className='flex flex-col md:flex-row gap-8 '>
           
-          <div className='flex-1 md:mr-8'>
-            <h1 className='text-xl md:text-4xl font-medium mb-4'>
+          <div className='flex-1 md:mr-8 '>
+            <h1 className='text-xl md:text-4xl font-medium mb-4 '>
               Find Real Estate & Get <br /> Your Dream Place
             </h1>
-            <p className='text-md font-semibold mb-4'>
+            <p className='text-md font-semibold mb-4 lg:mt-8'>
               Luxury Properties brings you the pinnacle of real estate excellence. Browse through our selection of homes and stunning estates, each designed to offer the ultimate in comfort and style. Experience a seamless journey to your dream property with our expert guidance.
             </p>
           </div>
@@ -32,7 +32,7 @@ const Hero = () => {
               items={items}
               disableButtonsControls
               autoPlay
-              autoPlayInterval={1000}
+              autoPlayInterval={3000}
               infinite
               className='h-64 rounded-xl' 
             />

@@ -3,7 +3,7 @@ import Banner from './Banner';
 
 const HomeBanners = () => {
   return (
-    <div className='space-y-8'> 
+    <div className=''> 
       <Banner
         purpose='RENT A HOME'
         title1='Rental Homes for'

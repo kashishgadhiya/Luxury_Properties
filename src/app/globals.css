@@ -84,4 +84,46 @@ body {
   margin: 0 auto;
 }
 
+/* styles/globals.css */
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-1rem);
+  }
+  60% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+@keyframes bounce-delay {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-1rem);
+  }
+  60% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
 
