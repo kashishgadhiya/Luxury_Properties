@@ -7,6 +7,7 @@ const data = [
     bathrooms: 2,
     price: 25000000,
     address: "Marine Drive, Mumbai",
+    type: "buy",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const data = [
     bathrooms: 2,
     price: 8000000,
     address: "Koramangala, Bangalore",
+    type: "buy",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const data = [
     bathrooms: 3,
     price: 35000000,
     address: "Whitefield, Bangalore",
+    type: "buy",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const data = [
     bathrooms: 2,
     price: 12000000,
     address: "Munnar, Kerala",
+    type: "buy",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const data = [
     bathrooms: 0,
     price: 22000000,
     address: "Connaught Place, Delhi",
+    type: "buy",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const data = [
     bathrooms: 2,
     price: 9500000,
     address: "Kalyani Nagar, Pune",
+    type: "buy",
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const data = [
     bathrooms: 1,
     price: 5000000,
     address: "Banjara Hills, Hyderabad",
+    type: "buy",
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const data = [
     bathrooms: 4,
     price: 75000000,
     address: "Bandra, Mumbai",
+    type: "buy",
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ const data = [
     bathrooms: 1,
     price: 3500000,
     address: "Gota, Ahmedabad",
+    type: "buy",
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ const data = [
     bathrooms: 3,
     price: 18000000,
     address: "Chennai, Tamil Nadu",
+    type: "buy",
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ const data = [
     bathrooms: 2,
     price: 12000000,
     address: "Salt Lake, Kolkata",
+    type: "buy",
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ const data = [
     bathrooms: 4,
     price: 22000000,
     address: "Nashik, Maharashtra",
+    type: "buy",
   },
   {
     id: 13,
@@ -115,6 +127,7 @@ const data = [
     bathrooms: 1,
     price: 7000000,
     address: "Sector 18, Noida",
+    type: "buy",
   },
   {
     id: 14,
@@ -124,6 +137,7 @@ const data = [
     bathrooms: 2,
     price: 8000000,
     address: "C-Scheme, Jaipur",
+    type: "buy",
   },
   {
     id: 15,
@@ -133,6 +147,7 @@ const data = [
     bathrooms: 1,
     price: 6000000,
     address: "Sector 17, Chandigarh",
+    type: "buy",
   },
   {
     id: 16,
@@ -142,6 +157,7 @@ const data = [
     bathrooms: 3,
     price: 30000000,
     address: "DLF Phase 5, Gurgaon",
+    type: "buy",
   },
   {
     id: 17,
@@ -151,6 +167,7 @@ const data = [
     bathrooms: 1,
     price: 4000000,
     address: "Sector 15, Faridabad",
+    type: "buy",
   },
   {
     id: 18,
@@ -160,6 +177,7 @@ const data = [
     bathrooms: 1,
     price: 9000000,
     address: "Indiranagar, Bengaluru",
+    type: "buy",
   },
   {
     id: 19,
@@ -169,6 +187,7 @@ const data = [
     bathrooms: 2,
     price: 13000000,
     address: "Coorg, Karnataka",
+    type: "buy",
   },
   {
     id: 20,
@@ -178,7 +197,119 @@ const data = [
     bathrooms: 2,
     price: 16000000,
     address: "Powai, Mumbai",
+    type: "buy",
   },
+  {
+    id: 21,
+    title: "Cozy Studio",
+    img: "/r_1.jpg",
+    bedrooms: 1,
+    bathrooms: 1,
+    price: 30000,
+    address: "Downtown, Mumbai",
+    type: "rent",
+  },
+  {
+    id: 22,
+    title: "Modern 1BHK",
+    img: "/r_2.jpg",
+    bedrooms: 1,
+    bathrooms: 1,
+    price: 25000,
+    address: "Suburbs, Bangalore",
+    type: "rent",
+  },
+  {
+    id: 23,
+    title: "Spacious 2BHK",
+    img: "/r_3.jpg",
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 50000,
+    address: "Near Park, Bangalore",
+    type: "rent",
+  },
+  {
+    id: 24,
+    title: "Comfortable 2BHK",
+    img: "/r_4.jpg",
+    bedrooms: 2,
+    bathrooms: 2,
+    price: 70000,
+    address: "City Center, Mumbai",
+    type: "rent",
+  },
+  {
+    id: 25,
+    title: "Affordable 1BHK",
+    img: "/r_5.jpg",
+    bedrooms: 1,
+    bathrooms: 1,
+    price: 20000,
+    address: "Quiet Area, Delhi",
+    type: "rent",
+  },
+  {
+    id: 26,
+    title: "Elegant Studio",
+    img: "/r_6.jpg",
+    bedrooms: 1,
+    bathrooms: 1,
+    price: 35000,
+    address: "Modern, Pune",
+    type: "rent",
+  },
+  {
+    id: 27,
+    title: "Bright 2BHK",
+    img: "/r_7.jpg",
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 60000,
+    address: "With Balcony, Hyderabad",
+    type: "rent",
+  },
+  {
+    id: 28,
+    title: "Stylish Studio",
+    img: "/r_8.jpg",
+    bedrooms: 1,
+    bathrooms: 1,
+    price: 40000,
+    address: "High-Rise, Mumbai",
+    type: "rent",
+  },
+  {
+    id: 29,
+    title: "Charming 2BHK",
+    img: "/r_9.jpg",
+    bedrooms: 2,
+    bathrooms: 2,
+    price: 75000,
+    address: "Near Mall, Ahmedabad",
+    type: "rent",
+  },
+  {
+    id: 30,
+    title: "Renovated 1BHK",
+    img: "/r_10.jpg",
+    bedrooms: 1,
+    bathrooms: 1,
+    price: 30000,
+    address: "Historic, Chennai",
+    type: "rent",
+  },
+  {
+    id: 31,
+    title: "Comfy 2BHK",
+    img: "/r_11.jpg",
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 55000,
+    address: "Family Area, Kolkata",
+    type: "rent",
+  },
+  
 ];
 
 export default data;

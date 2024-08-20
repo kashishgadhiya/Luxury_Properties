@@ -47,6 +47,7 @@ const Secpart = ({ item }) => {
                 alt={`Thumbnail ${index + 1}`}
                 className='cursor-pointer rounded-lg'
                 onClick={() => openModal(image)}
+                quality={75}
               />
             </div>
           ))}

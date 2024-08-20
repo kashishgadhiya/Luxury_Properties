@@ -3,10 +3,11 @@
 import React, { useState } from 'react';
 import SearchFilter from '../Components/SearchFilter';
 import Card from '../Components/Card';
-import data from '../lib/RentData';
+import data from '../lib/Data';
 
 const RentListpage = () => {
-  const [filteredData, setFilteredData] = useState(data);
+  const initialData = data.filter(item => item.id >= 21 && item.id <= 40);
+  const [filteredData, setFilteredData] = useState(initialData);
 
   const handleFilterChange = (filters) => {
     let filtered = data;

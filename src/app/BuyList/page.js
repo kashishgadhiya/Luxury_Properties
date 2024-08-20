@@ -1,12 +1,16 @@
 
-"use client"
+
+"use client";
 import React, { useState } from 'react';
+
 import SearchFilter from '../Components/SearchFilter';
 import Card from '../Components/Card';
 import data from '../lib/Data';
 
-const RentListpage = () => {
-  const [filteredData, setFilteredData] = useState(data);
+const BuyListpage = () => {
+ 
+  const initialData = data.filter(item => item.id >= 1 && item.id <= 20);
+  const [filteredData, setFilteredData] = useState(initialData );
 
   const handleFilterChange = (filters) => {
     let filtered = data;
@@ -35,11 +39,11 @@ const RentListpage = () => {
     <>
       <SearchFilter onSearch={handleFilterChange} />
       <h1 className='font-medium font-serif text-center text-3xl mt-10 mb-5'>Buy Properties</h1> 
-      <div className='flex mx-auto p-2 h-screen gap-5  max-w-5xl'>
+      <div className='flex mx-auto p-2 h-screen gap-5 max-w-5xl'>
         <div className='flex flex-wrap gap-2 w-screen'>
           {filteredData.length > 0 ? (
             filteredData.map(item => (
-              <Card key={item.id} item={item} />
+              <Card key={item.id} item={item}  /> 
             ))
           ) : (
             <p>No data found</p>
@@ -50,4 +54,4 @@ const RentListpage = () => {
   );
 };
 
-export default RentListpage;
+export default BuyListpage;

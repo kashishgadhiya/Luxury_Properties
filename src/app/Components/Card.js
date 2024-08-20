@@ -7,8 +7,10 @@ import { MdOutlineBedroomParent, MdOutlineBathroom } from "react-icons/md";
 
 const Card = ({ item }) => {
   return (
-    <div className='flex flex-col gap-2 bg-white shadow-md rounded-lg overflow-hidden mx-auto w-full sm:w-80 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl my-4'>
+    <div className='flex flex-col gap-2 bg-white shadow-md rounded-lg overflow-hidden mx-auto w-full sm:w-80 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl my-4 hover:border-blue-300'>
       <Link href={`/${item.id}`}>
+  
+    
         <img 
           src={item.img} 
           alt={`Image of ${item.title}`} 
@@ -42,3 +44,4 @@ const Card = ({ item }) => {
 }
 
 export default Card;
+

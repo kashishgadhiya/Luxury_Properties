@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import data from "../lib/RentData";
+import data from "../lib/Data";
 import Card from "./Card";
 import CardLoading from "./CardLoading";
 
@@ -55,7 +55,7 @@ function FreshProperties() {
   useEffect(() => {
    
     setTimeout(() => {
-      const limitedDataFromApi = data.slice(0, 8);
+      const limitedDataFromApi = data.slice(21, 30);
       setLimitedData(limitedDataFromApi);
       setCardLoading(false);
     }, 1000); 
